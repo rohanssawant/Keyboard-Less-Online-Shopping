@@ -110,13 +110,13 @@ def web_open(domain):
 
 #login process
 def login(name):
-    if(name == "rohan") or (name == "sharmilee"):
+    if(name == "rohan"):
         loginTextArea = driver.find_element_by_id("ap_email")
         loginTextArea.send_keys("rohansawant1801@gmail.com")
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "continue"))).click()
 
         passwordTextArea = driver.find_element_by_id("ap_password")
-        passwordTextArea.send_keys("Rss181206")
+        passwordTextArea.send_keys("")
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "signInSubmit"))).click()
 
 #searching a specific product which is store in ITEM variable
